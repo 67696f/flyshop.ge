@@ -1,5 +1,4 @@
 <EHR>
-<EHR>
 	<EHRInfo><!-- ინფორმაცია ელ. ისტორიაზე-->  
 		<EHRNo>15</EHRNo>
 		<CaseNo>26</CaseNo>
@@ -95,112 +94,110 @@
 			<HospitalizedBecauseOfThisDisease>5</HospitalizedBecauseOfThisDisease>
 		</AnamnesisMorbi>
 		<PreliminaryDiagnosis><!-- წინასწარი დიაგნოზი -->
-			<ICD10>K40.0</ICD10>
-			<ClinicDiagnosis></ClinicDiagnosis>
-			<ClinicDiagnosisDate>2018-10-15</ClinicDiagnosisDate>
+			<Record>
+				<ICD10>K40.0</ICD10>
+				<DiagnosisComment></DiagnosisComment>
+				<DiagnosisDate>2018-10-15</DiagnosisDate>
+			</Record>
 		</PreliminaryDiagnosis>
+		<ClinicDiagnosis><!-- კლინიკური დიაგნოზი -->
+			<Record>
+				<ICD10>K41.0</ICD10>
+				<DiagnosisComment></DiagnosisComment>
+				<DiagnosisDate>2018-10-15</DiagnosisDate>
+			</Record>
+		</ClinicDiagnosis>
 		<TreatmentProcess><!-- მკურნალობის პროცესი -->
 			<ObservationSupervison><!-- დაკვირვება/ზედამხედველობა -->
 				<Record>
+					<Section>1</Section>
+					<ICD10>K40.1</ICD10>
 					<NCSP>ZZZX00</NCSP>
+					<ProcedureStartDate>2017-10-18T18:00:00</ProcedureStartDate>
+					<ProcedureEndDate>2017-10-18T18:00:00</ProcedureEndDate>
 					<ProcedureResult>ზედამხედველობის კომენტარი</ProcedureResult>
 				</Record>
 			</ObservationSupervison>
 			<IntensiveCare><!-- ინტენსიური მოვლა -->
 				<Record>
 					<CareLevel>1</CareLevel>
+					<ICD10>K40.1</ICD10>
 					<NCSP>WAA8</NCSP>
+					<ProcedureStartDate>2017-10-18T18:00:00</ProcedureStartDate>
 					<ProcedureEndDate>2017-10-18T18:00:00</ProcedureEndDate>
 					<ProcedureResult>ინტენსიური მოვლის კომენტარი</ProcedureResult>
 				</Record>
 			</IntensiveCare>
 			<ClinicalDiagnosticExploration><!-- კლინიკურ-დიაგნოსტიკური გამოკვლევა -->
 				<Record>
+					<Section>1</Section>
+					<ICD10>K40.1</ICD10>
 					<NCSP>WAA8</NCSP>
 					<ProcedureEndDate>2017-10-18T18:00:00</ProcedureEndDate>
 					<ProcedureResult>კლინიკურ-დიაგნოსტიკური გამოკვლევა კომენტარი</ProcedureResult>
 					<Price>2.156</Price>
 				</Record>
-				<Record>
-					<NCSP>BBDE1A</NCSP>
-					<ProcedureEndDate>2017-10-18T18:00:00</ProcedureEndDate>
-					<ProcedureResult>კლინიკურ-დიაგნოსტიკური გამოკვლევა კომენტარი</ProcedureResult>
-					<Price>5.156</Price>
-				</Record>
-				<Record>
-					<NCSP>BBIA00</NCSP>
-					<ProcedureEndDate>2017-10-18T18:00:00</ProcedureEndDate>
-					<ProcedureResult>კლინიკურ-დიაგნოსტიკური გამოკვლევა კომენტარი</ProcedureResult>
-				</Record>
 			</ClinicalDiagnosticExploration>
 			<Transfusion><!-- სისხლის გადასხმა -->
 				<Record>
+					<Section>1</Section>
+					<ICD10>K40.1</ICD10>
 					<BloodComponent>1</BloodComponent>
+					<IndicationOfTransfusion>1</IndicationOfTransfusion>
 					<Quantity>1500</Quantity>
+					<TransfusionDoctorComment>ტრანსუზიის ანამნეზი , ექიმის კომენტარი</TransfusionDoctorComment>
 					<Price>0.256</Price>
-					<DoctorComment>მთლიანი სისხლის ტრანსფუზია - კომენტარი</DoctorComment>
-				</Record>
-				<Record>
-					<BloodComponent>1</BloodComponent>
-					<Quantity></Quantity>
-					<Price></Price>
-					<DoctorComment>მთლიანი სისხლის ტრანსფუზია - კომენტარი</DoctorComment>
 				</Record>
 			</Transfusion>
+			<Anesthesia><!-- ანესთეზიის ეპიზოდი -->
+				<Record>
+					<ICD10>K40.1</ICD10>
+					<NCSP>WAA8</NCSP>
+					<ProcedureStartDate>2017-10-18T18:00:00</ProcedureStartDate>
+					<ProcedureEndDate>2017-10-18T18:00:00</ProcedureEndDate>
+					<AnesthesiaComment>ქირურგიული ჩარევა კომენტარი</AnesthesiaComment>
+				</Record>
+			</Anesthesia>
 			<SurgicalIntervention><!-- ქირურგიული ჩარევა -->
 				<Record>
 					<NCSP>WAA8</NCSP>
+					<ICD10>K40.1</ICD10>
+					<Protocol_No>1.1</Protocol_No>
+					<ProcedureStartDate>2017-10-18T18:00:00</ProcedureStartDate>
 					<ProcedureEndDate>2017-10-18T18:00:00</ProcedureEndDate>
 					<ProcedureResult>ქირურგიული ჩარევა კომენტარი</ProcedureResult>
 				</Record>
 			</SurgicalIntervention>
+			<OperationProtocol><!-- ოპერაციის ოქმი -->
+				<Record>
+					<Protocol_No>1.1</Protocol_No>
+					<Protocol>ქირურგიული ჩარევა კომენტარი</Protocol>
+				</Record>
+			</OperationProtocol>
 			<OtherActivity><!-- სხვა აქტივობა -->
 				<Record>
+					<Section>1</Section>
 					<NCSP>WAA8</NCSP>
+					<ICD10>K40.1</ICD10>
 					<ProcedureEndDate>2017-10-18T18:00:00</ProcedureEndDate>
 					<ProcedureResult>სხვა აქტივობა კომენტარი</ProcedureResult>
 				</Record>
 			</OtherActivity>
 			<LabTest><!-- ლაბორატორიული გამოკვლევები-->
 				<Record>
+					<Section>1</Section>
 					<Laboratory>CG.7</Laboratory>
 					<LaboratoryExaminationText></LaboratoryExaminationText>
 					<ProcedureEndDate>2017-10-18</ProcedureEndDate>
 					<ProcedureResult>კომენტარი</ProcedureResult>
 					<Price>2.75</Price>
 				</Record>
-				<Record>
-					<Laboratory>CG.7</Laboratory>
-					<LaboratoryExaminationText></LaboratoryExaminationText>
-					<ProcedureEndDate>2017-10-18</ProcedureEndDate>
-					<ProcedureResult>კომენტარი</ProcedureResult>
-					<Price></Price>
-				</Record>
-				<Record>
-					<Laboratory>CG.7</Laboratory>
-					<LaboratoryExaminationText></LaboratoryExaminationText>
-					<ProcedureEndDate>2017-10-18</ProcedureEndDate>
-					<ProcedureResult>კომენტარი</ProcedureResult>
-				</Record>
 			</LabTest>
 			<Consultations><!-- კონსულტაციები-->
 				<Record>
+					<Section>1</Section>
 					<NCSP>FADC00</NCSP>
-					<CodeOfTheMedicalSpecialty>17</CodeOfTheMedicalSpecialty>
-					<ConsultantDoctorName>სახელი გვარი</ConsultantDoctorName>
-					<ConsultationDate>2017-10-18T18:00:00</ConsultationDate>
-					<ConsultationResultsComment></ConsultationResultsComment>
-				</Record>
-				<Record>
-					<NCSP>FADC00</NCSP>
-					<CodeOfTheMedicalSpecialty>17</CodeOfTheMedicalSpecialty>
-					<ConsultantDoctorName>სახელი გვარი</ConsultantDoctorName>
-					<ConsultationDate>2017-10-18T18:00:00</ConsultationDate>
-					<ConsultationResultsComment></ConsultationResultsComment>
-					<Price>5.56</Price>
-				</Record>
-				<Record>
-					<NCSP>FADC00</NCSP>
+					<ICD10>K40.1</ICD10>
 					<CodeOfTheMedicalSpecialty>17</CodeOfTheMedicalSpecialty>
 					<ConsultantDoctorName>სახელი გვარი</ConsultantDoctorName>
 					<ConsultationDate>2017-10-18T18:00:00</ConsultationDate>
@@ -215,48 +212,58 @@
 			</OtherRecommendations>
 			<Prescription><!-- დანიშნულება -->
 				<Record>
+					<ICD10>K11</ICD10>
+					<Section>1</Section>
 					<DrugID>19307</DrugID>
 					<Linked>1</Linked>
 					<DrugNameGE></DrugNameGE>
 					<DrugCount>5.00</DrugCount>
 					<Price>1.25</Price>
 					<DS>1</DS>
-				</Record>
-				<Record>
-					<DrugNameGE>ფრაქსიპარინი მულტი</DrugNameGE>
-					<DrugCount>3.00</DrugCount>
-					<DS>2</DS>
-				</Record>
-				<Record>
-					<DrugID>111</DrugID>
-					<Linked>0</Linked>
-					<DrugNameGE>ფრაქსიპარინი</DrugNameGE>
-					<DrugCount>5.00</DrugCount>
-					<Price>1.25</Price>
-					<DS>3</DS>
+					<WasUsed>1</WasUsed><!-- 1 = 'მკურნალობის პროცესში' / 2 = 'ანესთეზიის ეპიზოდში' -->
 				</Record>
 			</Prescription>
 		</TreatmentProcess>
-		<VisitsAbsent><!-- დროებითი გადაყვანა -->
+		<Cursus>
 			<Record>
-				<AbsentStartDate>2018-01-15T15:20:00</AbsentStartDate><!-- თარიღიდან -->
-				<AbsentEndDate>2018-02-11T10:25:00</AbsentEndDate><!-- თარიღამდე-->
-				<AbsentComment>გადაყვანილია საერალიბიტაციოდ კლინიკა 1-ში</AbsentComment><!-- კომენტარი -->
+				<Section>1</Section>
+				<CursusDate>2017-10-18T18:00</CursusDate>
+				<DoctorComment>კომენტარი</DoctorComment>
+				<PlannedExaminations>დაგეგმილი გამოკვლევები</PlannedExaminations>
+				<Criticality>1</Criticality><!--  1 => კი ; 2 => არა -->
 			</Record>
+		</Cursus>
+		<VisitsAbsent>
 			<Record>
-				<AbsentStartDate>2018-02-18T15:20:00</AbsentStartDate>
-				<AbsentEndDate>2018-02-20T10:25:00</AbsentEndDate>
-				<AbsentComment>გადაყვანილია საერალიბიტაციოდ კლინიკა 2-ში</AbsentComment>
+				<AbsentStartDate>2018-01-15T15:20:00</AbsentStartDate>
+				<AbsentEndDate>2018-02-11T10:25:00</AbsentEndDate>
+				<AbsentComment>გადაყვანილია საერალიბიტაციოდ</AbsentComment>
 			</Record>
 		</VisitsAbsent>
+		<ResponsiblePersons>
+			<Record>
+				<ResponsiblePersonID>01022005051</ResponsiblePersonID>
+				<ResponsiblePersonBDate>1980-08-15</ResponsiblePersonBDate>
+			</Record>
+		</ResponsiblePersons>
 	</Hospitalization>
 	<Discharge><!-- გაწერა-->
+		<Histomorphology><!-- ჰისტომორფოლოგია -->
+			<Record>
+				<Section>1</Section>
+				<Laboratory>CG.7</Laboratory>
+				<LaboratoryExaminationText></LaboratoryExaminationText>
+				<ProcedureStartDate>2017-10-18</ProcedureStartDate>
+				<ProcedureEndDate>2017-10-18</ProcedureEndDate>
+				<ProcedureResult>კომენტარი/შედეგი</ProcedureResult>
+				<Price>5.25</Price>
+			</Record>
+		</Histomorphology>
 		<FinalDiagnosis><!-- დასკვნითი დიაგნოზი-->
 			<PrimaryDisease><!-- ძირითადი დაავადება-->
-				<Record>
 					<ICD10>K40.1</ICD10>
 					<Illness>1</Illness>
-				</Record>
+					<ICD102>K40.1</ICD102><!-- ძირითადი დაავადება დაზუსტებული-->
 			</PrimaryDisease>
 			<DiseaseComplication><!-- დაავადების გართულება-->
 				<Record>
@@ -268,20 +275,30 @@
 				<Record>
 					<ICD10>K40.1</ICD10>
 					<Illness>1</Illness>
+					<ICD102>K40.1</ICD102><!-- ძირითადი დაავადება დაზუსტებული-->
 				</Record>
 			</AccompanyingDisease>
 		</FinalDiagnosis>
 		<HospitalizationOutcome><!-- ჰოსპიტალიზაციის გამოსავალი-->
 			<HospitalizationResult>1</HospitalizationResult>
 			<ConditionAtTheMoment>2</ConditionAtTheMoment>
+			<DoctorComment></DoctorComment>
 			<HospitalName>ღუდუშაური კლინიკა</HospitalName>
 		</HospitalizationOutcome>
 		<RecommendationsAfterDischarge><!-- გაწერის შემდგომი რეკომენდაციები-->
+			<RecomendedSurgicalIntervention><!-- ქირურგიული ჩარევები/პროცედურები-->
+				<Record>
+					<NCSP>FADC00</NCSP>
+					<NCSPComment>კომენტარი </NCSPComment>
+					<ICD10>FADC00</ICD10>
+					<ICD10Comment>FADC00</ICD10Comment>
+				</Record>
+			</RecomendedSurgicalIntervention>
 			<InstrumentalExplorations><!-- ინსტრუმენტული გამოკვლევები-->
 				<Record>
 					<NCSP>JDE002</NCSP>
 					<InstrumentalExplorationsDate>2018-08-14</InstrumentalExplorationsDate>
-					<DoctorComment></DoctorComment>
+					<DoctorComment>კომენტარი </DoctorComment>
 				</Record>
 			</InstrumentalExplorations>
 			<RecommendationLabTest><!-- ლაბორატორიული გამოკვლევები-->
@@ -289,7 +306,7 @@
 					<Laboratory>BL.1.1</Laboratory>
 					<LabExamText></LabExamText>
 					<LabExamDate>2018-08-15</LabExamDate>
-					<DoctorComment></DoctorComment>
+					<DoctorComment>კომენტარი </DoctorComment>
 				</Record>
 			</RecommendationLabTest>
 			<ConsultationsInAmbulatories><!--კონსულტაციები ამბულატორიაში-->
@@ -297,7 +314,7 @@
 					<NCSP>FADC00</NCSP>
 					<CodeOfTheMedicalSpecialty>12</CodeOfTheMedicalSpecialty>
 					<TheDeadlineOfRecommendation>2017-10-18</TheDeadlineOfRecommendation>
-					<DoctorComment></DoctorComment>
+					<DoctorComment>კომენტარი </DoctorComment>
 				</Record>
 			</ConsultationsInAmbulatories>
 			<RecommendationOther><!--სხვა რეკომენდაციები-->
@@ -321,7 +338,6 @@
 						<DS>1 ტაბლეტი 1ჯერ დღეში</DS>
 						<RecipeNo>F3E10000000253</RecipeNo>
 						<RecipeDur>2018-10-15</RecipeDur>
-						<PrescriptionDate>2017-10-18</PrescriptionDate>
 					</Record>
 				</OtherPrescription>
 			</Prescriptions>
